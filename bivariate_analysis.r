@@ -32,6 +32,12 @@ fig <- plot_ly(y = auto_data$Price, x=auto_data$Power, type="scatter",
        layout(xaxis = list(title = "Power Hp"),
               yaxis = list(title = "Price"))
 
+fig <- plot_ly(y = auto_data$Power, x=auto_data$Engine.CC, type="scatter",
+               marker = list(color="#9932CC")) %>%
+        layout(xaxis = list(title = "Engine"),
+               yaxis = list(title = "Power"))
+
+
 fig <- plot_ly(y = auto_data$Mileage.Km.L, color=auto_data$Fuel_Type, type="box") %>%
        layout(xaxis = list(title = "Fuel Type"),
               yaxis = list(title = "Mileage Km/L"))
