@@ -21,6 +21,11 @@ fig <- plot_ly(y = auto_data$Price, x=auto_data$Year,
       layout(xaxis = list(title = "Year"),
              yaxis = list(title = "Price"))
 
+fig <- plot_ly(y = auto_data$Kilometers_Driven, x=auto_data$Year,ttype="scatter",
+               marker = list(color="#8b0d86")) %>%
+       layout(xaxis = list(title = "Year"),
+              yaxis = list(title = "Distance Driven"))
+
 
 fig <- plot_ly(y = auto_data$Price, x=auto_data$Engine.CC, type="scatter",
                marker = list(color="#e0812c")) %>%
