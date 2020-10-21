@@ -55,8 +55,21 @@ rmse = sqrt(mean(error^2))
 
 
 # Plotting Prediction vs Actual values
-plot_ly(x=pred_df$Actual,y=pred_df$Predicted)
+fit <- lm(Predicted ~ Actual, data = pred_df)
+
+pred_df %>% plot_ly(x = ~Actual) %>% 
+              add_markers(y = ~Predicted, name="Scatter") %>%
+              add_lines(x = ~Actual, y = fitted(fit), name="Regression Line")%>%
+              layout(xaxis = list(title = "Actual"),
+                     yaxis = list(title = "Predicted"))
 
 
+validate_df = read.csv("C://Users/subha/Desktop/Visualization & Analysis on Automobile Dataset using Machine Learning in R/validate.csv")
+val_pred_df = predict(ML_Model, newdata = validate_df)
 
+predict_data = cbind(Actual=validate_df$Price/100000, Predicted=predict_df/100000)
+val_pred_df = as.data.frame(predict_data)
+error = (val_pred_df$Actual-val_pred_df$Predicted)
+val_pred_df = cbind(val_pred_df,error)
+rmse = sqrt(mean(error^2))
 
