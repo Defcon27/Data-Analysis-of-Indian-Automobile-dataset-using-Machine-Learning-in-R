@@ -148,17 +148,90 @@ fig <- plot_ly(data = auto_data,y = ~Power, x=~Seats,
               xaxis = list(title = "Seats"),
               yaxis = list(title = "Power"))
 
+
 fig <- plot_ly(data = auto_data,y = ~Price, x=~Fuel_Type,
                color=I(~Transmission), colors=c("#ef553b","#00cc96") ,type="violin") %>%
        layout(violinmode = 'group',
               xaxis = list(title = "Fuel Type"),
               yaxis = list(title = "Price"))
-
 fig <- plot_ly(data = auto_data,y = ~Price, x=~Owner_Type,
-               color=I(~Transmission), colors="Set1" ,type="violin") %>%
-       layout(violinmode = 'overlay',
+               color=I(~Transmission), colors="Dark2" ,type="violin") %>%
+       layout(violinmode = 'group',
               xaxis = list(title = "Owner Type"),
               yaxis = list(title = "Price"))
 
 
+
+fig <- auto_data %>% plot_ly(type = 'violin') 
+fig <- fig %>% add_trace(x = ~Fuel_Type[auto_data$Transmission == 'Automatic'],
+                         y = ~Price[auto_data$Transmission == 'Automatic'],
+                         legendgroup = 'Automatic', scalegroup = 'Automatic',
+                         name = 'Automatic',side = 'negative',color = I("blue"))
+fig <- fig %>% add_trace(x = ~Fuel_Type[auto_data$Transmission == 'Manual'],
+                         y = ~Price[auto_data$Transmission == 'Manual'],
+                         legendgroup = 'Manual', scalegroup = 'Manual',
+                         name = 'Manual',side = 'positive',color = I("green"))%>%
+       layout(violingroupgap = 0,
+              xaxis = list(title = "Price"),
+              yaxis = list(title = "Fuel Type"))
+
+
+fig <- auto_data %>% plot_ly(type = 'violin') 
+fig <- fig %>% add_trace(x = ~Location[auto_data$Transmission == 'Automatic'],
+                         y = ~Price[auto_data$Transmission == 'Automatic'],
+                         legendgroup = 'Automatic', scalegroup = 'Automatic',
+                         name = 'Automatic',side = 'negative',color = I("blue"))
+
+fig <- fig %>% add_trace(x = ~Location[auto_data$Transmission == 'Manual'],
+                         y = ~Price[auto_data$Transmission == 'Manual'],
+                         legendgroup = 'Manual', scalegroup = 'Manual',
+                         name = 'Manual',side = 'positive',color = I("orange"))%>%
+               layout(violingap = 0,
+                      violingroupgap = 0,
+                      violinmode = 'overlay',
+                      xaxis = list(title = "Location"),
+                      yaxis = list(title = "Price"))
+
+
+fig <- plot_ly(data = auto_data,y = ~Price, x=~Seats,type="violin") %>%
+       layout(violingap = 0,violingroupgap = 0,
+              violinmode = "group",
+              xaxis = list(title = "Seats"),
+              yaxis = list(title = "Price"))
+
+
+fig <- auto_data %>% plot_ly(type = 'violin') 
+fig <- fig %>% add_trace(x = ~Fuel_Type[auto_data$Transmission == 'Automatic'],
+                         y = ~Engine.CC[auto_data$Transmission == 'Automatic'],
+                         legendgroup = 'Automatic', scalegroup = 'Automatic',
+                         name = 'Automatic',side = 'negative',color = I("#a14ef4"))
+
+fig <- fig %>% add_trace(x = ~Fuel_Type[auto_data$Transmission == 'Manual'],
+                         y = ~Engine.CC[auto_data$Transmission == 'Manual'],
+                         legendgroup = 'Manual', scalegroup = 'Manual',
+                         name = 'Manual',side = 'positive',color = I("#ff6692"))%>%
+               layout(xaxis = list(title = "Fuel Type"),
+                      yaxis = list(title = "Engine Capacity (CC)"),
+                      violingap = 0,violingroupgap = 0,violinmode = 'overlay')
+
+
+
+fig <- auto_data %>% plot_ly(type = 'violin') 
+fig <- fig %>% add_trace(x = ~Fuel_Type[auto_data$Transmission == 'Automatic'],
+                         y = ~Power[auto_data$Transmission == 'Automatic'],
+                         legendgroup = 'Automatic', scalegroup = 'Automatic',
+                         name = 'Automatic',side = 'negative',color = I("#ef553b"))
+
+fig <- fig %>% add_trace(x = ~Fuel_Type[auto_data$Transmission == 'Manual'],
+                         y = ~Power[auto_data$Transmission == 'Manual'],
+                         legendgroup = 'Manual', scalegroup = 'Manual',
+                         name = 'Manual',side = 'positive',color = I("#00cc96"))%>%
+               layout(xaxis = list(title = "Fuel Type"),
+                      yaxis = list(title = "Power (Hp)"),
+                      violingap = 0,violingroupgap = 0,violinmode = 'overlay')
+
+
+
+
 fig
+
