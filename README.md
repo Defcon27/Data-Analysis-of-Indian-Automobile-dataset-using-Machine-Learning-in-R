@@ -27,7 +27,7 @@ The automobile industry today is the most profitable industry. Due to increase i
 
 ## PROPOSED METHODLOGY
 
-<img align="right" src='Docs/achitecture.png' width=25%/>
+<img align="right" src='Docs/achitecture.png' width=26%/>
 
 <p align="justify">
 The architecture of the entire project is divided into two parts which are the visualization and the data analysis parts of the project. The visualization part of the project deals with the various plotting of attributes while the data analysis part of the project deals with finding the relationship between various attributes in the dataset.<br><br>
@@ -37,19 +37,22 @@ The data analysis is performed on the automobile dataset utilizing machine learn
 </p>
 
 <br>
+<br>
 
 
 ## VISUALIZATIONS
-<img align="right" src='Docs/Plots/uni_bar.gif' height=100%/>
-<img align="right" src='Docs/Plots/uni_box.gif' height=100%/>
 
-<img align="right" src='Docs/Plots/bi_sc.gif' height=100%/>
-<img align="right" src='Docs/Plots/uni_box.gif' height=100%/>
-<img align="right" src='Docs/Plots/bi_vio.gif' height=100%/>
+<img align="right" src='Docs/Plots/uni_box.gif' width=20% height=430px >
+<img align="middle" src='Docs/Plots/uni_bar.gif' width=50%/>
 
-<img align="right" src='Docs/Plots/mul_bar.gif' height=100%/>
-<img align="right" src='Docs/Plots/mul_bar.gif' height=100%/>
-<img align="right" src='Docs/Plots/mul_box.gif' height=100%/>
+<img align="middle" src='Docs/Plots/bi_sc.gif' width=50%/>
+<img align="middle" src='Docs/Plots/uni_box.gif' width=50%/>
+<img align="middle" src='Docs/Plots/bi_vio.gif' width=50%/>
 
-<img align="right" src='Docs/Plots/pred.gif' height=100%/>
+<img align="middle" src='Docs/Plots/mul_bar.gif' width=50%/>
+<img align="middle" src='Docs/Plots/mul_sc.gif' width=50%/>
+<img align="middle" src='Docs/Plots/mul_box.gif' width=50%/>
+<img align="middle" src='Docs/Plots/mul_box2.gif' width=50%/>
+
+<img align="middle" src='Docs/Plots/reg.gif' width=50%/>
 
