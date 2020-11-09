@@ -19,6 +19,9 @@
 ![CARET](https://img.shields.io/badge/CARET%20Package-red.svg?&style=for-the-badge)
 ![caTools](https://img.shields.io/badge/catools-00B274.svg?&style=for-the-badge)
 
+<p><br><p>
+
+
 
 
 
@@ -52,8 +55,25 @@ The data analysis is performed on the automobile dataset utilizing machine learn
 
 ### Univariate Analysis
 
-<img align="right" src='Docs/Plots/uni_box.gif' width=30%>
-<img align="left" src='Docs/Plots/uni_bar.gif' width=50%/>
+<p><img src='Docs/Plots/uni_bar.gif' width=45%/><img src='Docs/Plots/uni_box.gif' width=30%></p>
 
-<br>
+<p><br><p>
+
+
+### Bivariate Analysis
+<p><img align="middle" src='Docs/Plots/bi_sc.gif' width=45%/></p>
+<p><img src='Docs/Plots/bi_vio.gif' width=30%/><img src='Docs/Plots/uni_box.gif' width=30%/></p>
+
+<p><br><p>
+
+### Multivariate Analysis
+<p align="left"><img src='Docs/Plots/mul_bar.gif' width=45%/><img src='Docs/Plots/mul_sc.gif' width=45%/>
+<br><img src='Docs/Plots/mul_box.gif' width=45%/><img src='Docs/Plots/mul_box2.gif' width=30%/></p>
+
+<p><br><p>
+
+[📃 Project Report Here](/Docs/Report.pdf)
+
+
+
 
