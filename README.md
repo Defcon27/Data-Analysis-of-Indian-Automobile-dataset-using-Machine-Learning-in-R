@@ -70,7 +70,16 @@ The data analysis is performed on the automobile dataset utilizing machine learn
 <br><img src='Docs/Plots/mul_box.gif' width=45%/><img src='Docs/Plots/mul_box2.gif' width=30%/></p>
 
 <p><br><p>
+  
+### Regression Analysis
+<p><img src='Docs/Plots/reg.gif' width=55%/></p>
+       
+<p><br><p>
+  
+### R<sup>2</sup> Score of Regression Model = 0.79
 
+<p><br><p>
+ 
 [📃 Project Report Here](/Docs/Report.pdf)
 
 
