@@ -13,7 +13,14 @@
 <br>
 
 ### 🖥️ Technologies and Tools used
-![Python Badge](http://img.shields.io/badge/-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![R Badge](https://img.shields.io/badge/r%20programming-%23276DC3.svg?&style=for-the-badge&logo=r&logoColor=white)
+![R Studio](https://img.shields.io/badge/R%20Studio-9cf.svg?&style=for-the-badge&logo=rstudio&logoColor=222222)
+![Plotly](https://img.shields.io/badge/Plotly-49587c.svg?&style=for-the-badge&logo=power-bi&logoColor=white)
+![CARET](https://img.shields.io/badge/CARET%20Package-red.svg?&style=for-the-badge)
+![caTools](https://img.shields.io/badge/catools-00B274.svg?&style=for-the-badge)
+
+
+
 
 
 <br>
@@ -37,22 +44,16 @@ The data analysis is performed on the automobile dataset utilizing machine learn
 </p>
 
 <br>
-<br>
-
+<p><br></pr>
+<p><br></pr>
+<p><br></pr>
 
 ## VISUALIZATIONS
 
-<img align="right" src='Docs/Plots/uni_box.gif' width=20% height=430px >
-<img align="middle" src='Docs/Plots/uni_bar.gif' width=50%/>
+### Univariate Analysis
 
-<img align="middle" src='Docs/Plots/bi_sc.gif' width=50%/>
-<img align="middle" src='Docs/Plots/uni_box.gif' width=50%/>
-<img align="middle" src='Docs/Plots/bi_vio.gif' width=50%/>
+<img align="right" src='Docs/Plots/uni_box.gif' width=30%>
+<img align="left" src='Docs/Plots/uni_bar.gif' width=50%/>
 
-<img align="middle" src='Docs/Plots/mul_bar.gif' width=50%/>
-<img align="middle" src='Docs/Plots/mul_sc.gif' width=50%/>
-<img align="middle" src='Docs/Plots/mul_box.gif' width=50%/>
-<img align="middle" src='Docs/Plots/mul_box2.gif' width=50%/>
-
-<img align="middle" src='Docs/Plots/reg.gif' width=50%/>
+<br>
 
